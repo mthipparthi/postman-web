@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quote Response</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Quote Response</h2>
+      <div class="alert alert-info" role="alert">
+        <strong>Status Code:</strong> {{ status_code }}
+      </div>
+      <h2>Formatted JSON:</h2>
+      <pre>{{ formatted_json | tojson(indent=2) }}</pre>
+      <a href="/" class="btn btn-primary">Back to Form</a>
+    </div>
+  </body>
+</html>

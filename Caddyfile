@@ -1,0 +1,12 @@
+partner1.xcore.local {
+  reverse_proxy localhost:8000
+}
+
+partner2.xcore.local {
+  reverse_proxy localhost:8000  
+}
+
+abcd.xcore.local {
+  reverse_proxy localhost:8000  
+}
+

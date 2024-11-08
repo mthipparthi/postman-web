@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Get Quote</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Get a Quote</h2>
+      <form action="/submit" method="post">
+        <div class="mb-3">
+          <label for="partner_host" class="form-label">Partner Host</label>
+          <input
+            type="text"
+            class="form-control"
+            id="partner_host"
+            name="partner_host"
+            value="http://127.0.0.1:8000"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="customer_country" class="form-label"
+            >Customer Country</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="customer_country"
+            name="customer_country"
+            value="AU"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="customer_language" class="form-label"
+            >Customer Language</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="customer_language"
+            name="customer_language"
+            value="en"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="customer_postcode" class="form-label"
+            >Customer Postcode</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="customer_postcode"
+            name="customer_postcode"
+            value="2007"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="policy_start_date" class="form-label"
+            >Policy Start Date</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="policy_start_date"
+            name="policy_start_date"
+            value="2024-11-13T03:34:23.361Z"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="policy_end_date" class="form-label"
+            >Policy End Date</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="policy_end_date"
+            name="policy_end_date"
+            value="2025-02-26T03:34:23.362Z"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="insured" class="form-label">Insured</label>
+          <input
+            type="text"
+            class="form-control"
+            id="insured"
+            name="insured"
+            value="[{}, {}]"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
